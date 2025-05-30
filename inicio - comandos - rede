@@ -1,0 +1,16 @@
+eth0
+enp0s3
+
+sudo tcpdump -i enp0s3
+sudo tcpdump -i enp0s3 dst port 80
+sudo tcpdump -i enp0s3 src port 22
+sudo tcpdump -i enp0s3 not host 10.106.0.1
+sudo tcpdump -i enp0s3 dst host 10.106.0.1
+sudo tcpdump -i enp0s3 src 10.106.0.1
+
+tcpdump -i eth0 -n host www.google.com.br
+tcpdump -i eth0 -n host 192.168.0.1
+tcpdump -i eth0 -n host 192.168.0.1 and port 80
+tcpdump -i eth0 -n dst host 192.168.0.1 and not port 80
+tcpdump -i eth0 -n net 192.168 and icmp
+tcpdump -i eth0 -n tcp[13] == 2
