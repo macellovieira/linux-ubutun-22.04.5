@@ -1,0 +1,9 @@
+uname --all
+
+free -m
+df -h
+sudo fdisk -l
+sudo lsblk
+sudo cfdisk
+
+duf --instalar pacote
