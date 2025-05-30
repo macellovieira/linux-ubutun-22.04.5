@@ -1,1 +1,12 @@
+hostname
+ip a
 
+top
+
+ls -ls
+
+history | more
+history -c
+
+shutdown -r now
+shutdown -h now
