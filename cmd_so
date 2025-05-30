@@ -7,3 +7,22 @@ uname --all
 
 #Para fazer upgrade dos pacotes
  sudo apt upgrade
+
+history | more
+history -c
+
+reboot
+-- Desliga
+   shutdown -h now
+
+-- Renicia
+   shutdown -r now
+
+-h Finalizar e desligar o sistema
+-r Reiniciar o sistema
+-f Inicialização rápida – não faz verificação do sistema de arquivos (fsck) no próximo boot
+-k Enviar mensagens de aviso, mas sem finalizar o sistema
+-F Forçar a verificação do sistema de arquivos na próxima inicialização
+-c Cancelar a finalização ou reinicialização do sistema
+-P Desliga o computador
+
