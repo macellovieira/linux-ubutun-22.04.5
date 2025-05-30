@@ -1,3 +1,8 @@
+sudo nano /etc/hostname
+reboot
+shutdown -r now
+------------------------
+
 hostname
 ip a
 
