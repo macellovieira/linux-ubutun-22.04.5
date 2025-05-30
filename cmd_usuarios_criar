@@ -1,0 +1,5 @@
+
+sudo adduser [ nome do usuario ] 
+sudo usermod -a -G sudo [ nome do usuario ]
+sudo deluser [ nome do usuario ] sudo
+sudo gpasswd -d sempreupdate sudo
