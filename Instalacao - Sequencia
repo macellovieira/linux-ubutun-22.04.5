@@ -1,0 +1,22 @@
+01 - Atualização 
+     sudo apt-get update
+     - O comando apt-get upgrade atualiza o sistema e baixa e instala atualizações de pacotes e dos programas da máquina.
+
+     sudo apt upgrade
+     - Para fazer upgrade dos pacotes
+
+     sudo apt clean
+     sudo apt update
+
+02 - DATA HORA
+     date
+     timedatectl
+     sudo timedatectl set-timezone America/Sao_Paulo
+     sudo timedatectl set-ntp off | on
+     timedatectl timesync-status
+     date
+     sudo shutdown -r now
+
+
+
+
