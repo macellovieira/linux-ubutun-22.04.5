@@ -1,0 +1,51 @@
+https://www.morais.eti.br/2020/10/20/como-monitorar-o-uso-da-rede-com-nload-no-linux/
+https://sempreupdate.com.br/linux/tutoriais/como-monitorar-o-trafego-da-rede-no-linux-pelo-terminal-e-em-tempo-real/
+https://pt.linkedin.com/advice/3/what-best-way-monitor-real-time-network-traffic-vzk0c?lang=pt
+https://www.linuxdescomplicado.com.br/2014/12/10-ferramentas-para-monitorar-largura.html
+
+
+sudo apt install nload -y
+sudo apt install nethogs -y
+
+nload
+nload -m
+nload -7 100
+nload -t 500
+nload -t 1000
+nload -m
+nload -m -t 1000
+nload enp0s3
+
+sudo nethogs enp0s3
+
+
+1 - NLOAD
+2 - IPTRAF
+3 - NETHOGS
+4 - BMON
+5 - IFTOP
+6 - TCPTRACK
+7 - VNSTAT
+8 - SPEEDOMETER
+9 - IFSTAT
+10 - COLLECTL
+
+
+1 Ferramenta Netstat
+Netstat, abreviação de estatísticas de rede, é uma ferramenta de linha de comando que exibe conexões de rede, tabelas de roteamento e várias estatísticas de interface de rede. Para monitorar o tráfego em tempo real, você pode usar netstat -c , que listará continuamente as conexões de rede. Isso pode ajudá-lo a identificar quais conexões estão ativas e se existem conexões não autorizadas. Para uma saída mais detalhada, você pode usar netstat -antup para mostrar todas as portas de escuta e programas associados.
+
+
+2 Utilitário Tcpdump
+Tcpdump é um poderoso analisador de pacotes de linha de comando que permite capturar e exibir o TCP/IP e outros pacotes que estão sendo transmitidos ou recebidos através de uma rede à qual o computador está conectado. Executar tcpdump -i eth0 , substituindo 'eth0' por sua interface de rede, para monitorar o tráfego em tempo real. O Tcpdump tem muitas opções para filtrar os dados, como por protocolo, origem e destino. Por exemplo IP TCPDUMP capturaria todos os pacotes IP.
+
+3 Aplicação Nload
+O Nload é um aplicativo de console que permite aos usuários monitorar o tráfego de entrada e saída separadamente. Ele fornece uma exibição visual em tempo real do tráfego de rede. Você pode instalá-lo na maioria das distribuições Linux e usar o comando nload para iniciar o monitoramento. Ele exibe o uso atual da largura de banda e a quantidade total de dados transferidos, oferecendo uma maneira fácil de entender os padrões de uso da sua rede.
+
+4 Comando IfTop
+IfTop é outro utilitário de linha de comando que fornece uma exibição em tempo real do uso da largura de banda da rede em uma interface especificada. Executando iftop Em seu terminal, você verá uma lista de conexões e a quantidade de dados que estão sendo transferidos sobre elas. Isso facilita a identificação de quais hosts estão consumindo mais largura de banda. O IfTop também pode exibir os dados em um formato mais detalhado, incluindo endereços de origem e destino, usando iftop -n
+
+5 Ferramenta VNStat
+VNStat é um monitor de tráfego de rede que usa as estatísticas da interface de rede fornecidas pelo kernel como fonte de informação. Isso significa que ele realmente não fareja nenhum tráfego e garante o uso leve dos recursos do sistema. Executando vnstat , você obtém um resumo do uso da rede. Para monitoramento contínuo, você pode usar vnstat -l , que mostra o tráfego ao vivo na interface selecionada.
+
+6 Comando SS
+O comando ss é um utilitário para investigar soquetes no Linux e exibi-los em tempo real. É um substituto moderno para netstat e pode fornecer informações mais detalhadas. Para monitorar suas conexões atuais, use ss -t -a para soquetes TCP ou ss -u -a para soquetes UDP. O comando ss também permite que a filtragem veja apenas soquetes de escuta ou mesmo soquetes conectados a uma porta específica.
