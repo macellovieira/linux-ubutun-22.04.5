@@ -1,0 +1,7 @@
+uname --all
+
+#Para atualizar o sistema/pacotes
+ sudo apt update
+
+#Para fazer upgrade dos pacotes
+ sudo apt upgrade
