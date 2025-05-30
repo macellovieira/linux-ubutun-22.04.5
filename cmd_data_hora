@@ -1,3 +1,20 @@
+date
+
+timedatectl
+
+sudo timedatectl set-timezone America/Sao_Paulo
+
+sudo timedatectl set-ntp on
+sudo timedatectl set-ntp off
+
+timedatectl timesync-status
+
+date
+
+sudo shutdown -r now
+
+=======================================================================================================================
+
 tzselect
 ---------------------------------------------
 
