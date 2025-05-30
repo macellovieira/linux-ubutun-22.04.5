@@ -1,1 +1,27 @@
+tzselect
+---------------------------------------------
 
+timedatectl
+date
+
+---------------------------------------------
+
+sudo timedatectl set-ntp on
+sudo timedatectl set-ntp off
+
+timedatectl list-timezones
+
+--------------------------------------------
+
+timedatectl
+
+sudo timedatectl set-time "06:24:00"
+sudo timedatectl set-time "2020-04-23"
+sudo hwclock --systohc
+
+ou
+
+sudo date --set="2020-04-23 06:24:25.990"
+sudo hwclock --systohc
+
+timedatectl
