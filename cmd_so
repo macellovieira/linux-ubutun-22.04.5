@@ -1,3 +1,5 @@
+hostname
+
 uname --all
 
 #Para atualizar o sistema/pacotes
