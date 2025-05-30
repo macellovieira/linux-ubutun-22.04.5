@@ -6,7 +6,7 @@ sudo usermod -a -G sudo [ nome do usuario ]
 sudo deluser [ nome do usuario ] sudo
 sudo gpasswd -d sempreupdate sudo
 
-usermod -aG sudo suporte-sav
+usermod -aG sudo suporte
 
 sudo passwd root
 sudo passwd usuario
