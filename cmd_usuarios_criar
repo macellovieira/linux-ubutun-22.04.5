@@ -5,3 +5,9 @@ sudo adduser [ nome do usuario ]
 sudo usermod -a -G sudo [ nome do usuario ]
 sudo deluser [ nome do usuario ] sudo
 sudo gpasswd -d sempreupdate sudo
+
+usermod -aG sudo suporte-sav
+
+sudo passwd root
+sudo passwd usuario
+sudo passwd suporte
