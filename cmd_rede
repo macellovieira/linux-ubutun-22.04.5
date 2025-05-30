@@ -1,1 +1,10 @@
+sudo nano /etc/hostname
 
+reboot
+shutdown -r now
+
+ip -a
+
+ping 192.168.1.254
+ping google.com
+ping 8.8.8.8
