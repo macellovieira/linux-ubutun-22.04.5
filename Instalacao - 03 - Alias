@@ -1,0 +1,38 @@
+sudo nano ~/.bashrc
+
+alias  dir='ls -ls'
+alias dir1='exa -abghHliS'
+alias dir2='exa -l'
+
+alias cls='clear'
+
+alias memoria='clear; free -m'
+alias  versao='clear; uname --all'
+alias  disco1='clear; df -h'
+alias  disco2='clear; sudo fdisk -l'
+alias  disco3='clear; sudo lsblk'
+alias  disco4='clear; sudo cfdisk'
+alias  disco5='clear; duf'
+
+alias  top1='top'
+alias  top2='htop'
+
+alias usuarios='clear; cat /etc/passwd'
+alias   grupos='clear; cat /etc/group'
+
+alias ip='clear; ip -a'
+
+alias ping_roteador='clear; ping 192.168.1.254'
+alias   ping_google='clear; ping google.com'
+alias      ping_dns='clear; ping 8.8.8.8'
+
+alias update1='sudo apt-get update'
+alias update2='sudo apt upgrade'
+
+alias historico='history | more'
+
+alias usuarios-logados='clear; w'
+alias usuarios-logados1='clear; who -H -m'
+
+alias sair='logout'
+alias boot='reboot'
