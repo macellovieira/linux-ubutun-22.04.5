@@ -5,12 +5,18 @@ shutdown -r now
 
 ip -a
 
+traceroute 8.8.8.8 --instalar pacote
+                   --sudo apt install inetutils-traceroute  
+
 ping 192.168.1.254
 ping google.com
 ping 8.8.8.8
 
 eth0
 enp0s3
+
+--instalar pacote
+--sudo apt install tcpdump
 
 sudo tcpdump -i eth0 enp0s3
 sudo tcpdump -i eth0 enp0s3 dst port 80
